@@ -1,0 +1,109 @@
+
+@font-face {
+    font-family: Vazir-Medium;
+    src: url(fonts/Vazir-Medium.eot) format("eot"),
+      url(fonts/Vazir-Medium.woff) format("woff"),
+      url(fonts/Vazir-Medium.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+  }
+  *,
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Vazir-Medium;
+  }
+  body {
+    direction: rtl;
+  }
+  a {
+    text-decoration: none;
+  }
+  li,
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+
+  .nav{
+      display: flex;
+      box-shadow: 1px -1px 9px 0px rgb(54, 54, 54);
+      padding: 15px;
+    }
+    
+  nav.nav li{
+      display: inline;
+      margin-left: 15px;
+      transition: all 1s;
+  }
+  nav.nav div{
+    display: block;
+    
+}
+.nav div{
+    margin-bottom: 15px;
+}
+
+nav div.icons img{
+    width: 30px;
+    height: 30px; 
+}
+nav div.icons{
+    margin-left: 15px;
+    width: 309x;
+    height: 30px;
+}
+
+
+nav div.bar{
+    display: none;
+    font-size: 30px;
+}
+/* nav.nav ul{
+    position: absolute;
+    top: 20px;
+    right: 64px;
+} */
+nav.nav ul{
+    align-self: center;
+}
+
+@media  screen and (max-width:525px){
+   
+   
+    .nav{
+        flex-direction: column;
+        
+        
+    }
+    .nav ul li{
+      display: block;
+        padding: 10px;
+        text-align: center;
+        border-top: 1px solid rgb(153, 153, 153);
+       
+    }
+    nav div.bar{
+       display: block;
+       position: absolute;
+        top: 19px;
+        right: 451px;
+    }
+    .nav ul {
+        display: block;
+        justify-content: center;
+        display: none;
+    }
+
+   .responsiv ul{
+    display: block;
+}
+    .nav{
+        display: block;
+    }
+}
+
